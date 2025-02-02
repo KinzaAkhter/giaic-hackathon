@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+        <h1 style="font-style: italic; font-family: Verdana, Geneva, Tahoma, sans-serif;">DYNAMIC RESUME BUILDER</h1>   
+        <form id="resume-form">
+            <fieldset>
+                <legend>Personal Information:</legend>
+                <label for="name">Name:</label>
+                <input type = "text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type = "text" id="email" placeholder="Enter your email address" required>
+
+                <label for="phone">Phone:</label>
+                <input type = "text" id="phone" placeholder="Enter your phone number" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qualification</legend>
+                <label for= "qualification">Qualification:</label>
+                <textarea id="qualification" placeholder="Enter your qualification"rows ="3" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Experience</legend>
+                <label for= "experience">Experience:</label>
+                <textarea id="experience" placeholder="Write about your work experience" rows ="3" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <label for= "skills">Skills:</label>
+                <textarea id="skills" placeholder="What skills do you have" rows ="3" required></textarea>
+            </fieldset>
+            <!--button for generating resume-->
+            <button type ="submit"><b>Get your Resume</b></button>
+        </form>
+        <br>
+        <!--Your dynamic & editable Resume-->
+        <div id="resume-display" contenteditable="true">
+            <!--Resume will be generated below-->
+        </div>
+        <script src="dynamic.js"></script>
+</body>
+</html>
+
